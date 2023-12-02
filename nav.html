@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 2px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> Home</a>
+
+		<a id="Substitution_Elimination_Reactions" onclick="navigate(this.id)" href="#"> Substitution and Elimination Reactions</a>
+
+		<a id="Addition_Reactions" onclick="navigate(this.id)" href="#"> Addition Reactions</a>
+
+		<a id="Alcohols" onclick="navigate(this.id)" href="#"> Alcohols</a>
+
+		<a id="Epoxides" onclick="navigate(this.id)" href="#"> Epoxides</a>
+
+		<a id="Ethers" onclick="navigate(this.id)" href="#"> Ethers</a>
+
+		<a id="Ketone_Aldehydes" onclick="navigate(this.id)" href="#"> Ketone/Aldehydes</a>
+
+		<a id="Amines" onclick="navigate(this.id)" href="#"> Amines</a>
+
+		<a id="Common_Nuc" onclick="navigate(this.id)" href="#"> Common Nucleophiles in Nucleophilic Addition Reactions</a>
+
+		<a id="Thiols" onclick="navigate(this.id)" href="#"> Thiols (Mercaptans) and Sulfides</a>
+
+		<a id="Carboxylic_Acids" onclick="navigate(this.id)" href="#"> Carboxylic Acids and Derivatives</a>
+
+		<a id="Nucleophilic_Acyl_Sub" onclick="navigate(this.id)" href="#"> Nucleophilic Acyl Substitutions</a>
+
+		<a id="Acid_Chlorides" onclick="navigate(this.id)" href="#"> Acid Chlorides</a>
+
+		<a id="Grignard_Reagent" onclick="navigate(this.id)" href="#"> Addition of R Groups via Grignard Reagent</a>
+
+		<a id="Acid_Anhydride_to_Carboxylic_Acid" onclick="navigate(this.id)" href="#"> Acid Anhydride into Carboxylic Acid</a>
+
+		<a id="Fischer_Ester" onclick="navigate(this.id)" href="#"> Fischer Esterification</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://example.com", '_blank').focus();
+
+			elseif (id == 'Substitution_Elimination_Reactions')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#3538a1a442314b02ab7aeea23fde0845", '_blank').focus();
+
+			elseif (id == 'Addition_Reactions')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#ff389a317f47498487a3ac6df4cb0e2e", '_blank').focus();
+
+			elseif (id == 'Alcohols')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#192908823d8143858402f51f455ff474", '_blank').focus();
+
+			elseif (id == 'Epoxides')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#4a190ec839674f90b9a2f610d80e206c", '_blank').focus();
+
+			elseif (id == 'Ethers')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#9e03d73af34748f4b1128c2c0e4ffe5a", '_blank').focus();
+
+			elseif (id == 'Ketone_Aldehydes')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#01b5641b6a56461581d37c7951d88664", '_blank').focus();
+
+			elseif (id == 'Amines')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#dc96f2a633b1472d98715fc4d33d34af", '_blank').focus();
+
+			elseif (id == 'Common_Nuc')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#1d6e06863c314e13823f79e32a4c79e9", '_blank').focus();
+
+			elseif (id == 'Thiols')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#5f3381e0f2904088a3e62cbf83ea3c78", '_blank').focus();
+
+			elseif (id == 'Carboxylic_Acids')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#782f1af165714c35b5124adc0d07845a", '_blank').focus();
+
+			elseif (id == 'Nucleophilic_Acyl_Sub')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#f7c2db114b204306bf616af6e10cee4c", '_blank').focus();
+
+			elseif (id == 'Acid_Chlorides')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#d7063c0ef6bf4ffe8cc657310fde8ac8", '_blank').focus();
+
+			elseif (id == 'Grignard_Reagent')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#fb748467e8694226ad2ce02a23188342", '_blank').focus();
+
+			elseif (id == 'Acid_Anhydride_to_Carboxylic_Acid')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#d9712704700944b9b64b07eec745bbe4", '_blank').focus();
+
+			elseif (id == 'Fischer_Ester')
+				window.open("https://www.notion.so/webstraw/Organic-Chemistry-b2f21b6f26c04c6b9049788a0a5b8829?pvs=4#d5e0162a2524466d800a2c3921f7ee5f", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
